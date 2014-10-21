@@ -20,7 +20,7 @@ getCiteCounts <- function(citekeys, bibtex){
   pass <- FALSE
   lib <- file(bibtex, open='r')
   for(line in readLines(lib, warn=F)){
-    if(str_sub(str_trim(tolower(line)), 1, ) == '@preamble'){
+    if(str_sub(str_trim(tolower(line)), 1, 9) == '@preamble'){
       pass <- TRUE
     } else if (str_trim(line) == '"}'){
       pass <- FALSE
