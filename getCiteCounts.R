@@ -5,7 +5,7 @@ getCiteCounts <- function(citekeys, bibtex){
   
   
   # Check for and load/install required packages
-  # --> stringr, bibtex, rcrossref
+  # --> stringr, rcrossref
   if (!'stringr' %in% installed.packages()) install.packages('stringr')
   require(stringr, quietly=TRUE)
   if (!'rcrossref' %in% installed.packages()){
