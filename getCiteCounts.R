@@ -86,8 +86,8 @@ getCiteCounts <- function(citekeys, bibtex){
 
 
 ####---- Demo ----####
-extable <- read.csv('example.csv', stringsAsFactors = FALSE)
-MasterBibtex <- 'example.bib'
+extable <- read.csv('test.csv', stringsAsFactors = FALSE)
+MasterBibtex <- 'test.bib'
 extable$Citations <- getCiteCounts(extable$Citekey, MasterBibtex)
 
 
